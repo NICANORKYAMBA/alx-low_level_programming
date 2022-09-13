@@ -5,9 +5,6 @@
  * Return: Always 0.
  */
 int print_sign(int n)
-/**
-function checks for the sign of a number
-*/
 {
 	if (n > 0)
 	{
