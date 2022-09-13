@@ -1,7 +1,6 @@
 #include "main.h"
-
 /**
-* _abs -> return absolute value of a number
+* _abs - return absolute value of a number
 * @n: parameter
 * Return: absolute value of a number
 */
