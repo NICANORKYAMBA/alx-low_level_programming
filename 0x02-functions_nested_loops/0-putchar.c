@@ -1,10 +1,9 @@
 #include "main.h"
-
 /**
-* main prints _putchar
-* return 0 when sucessful
+* main - Prints _putchar
+*
+* Return: Always 0 (Success)
 */
-
 int main(void)
 {
 	_putchar('_');
