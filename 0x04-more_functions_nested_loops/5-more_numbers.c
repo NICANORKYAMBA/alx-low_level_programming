@@ -1,8 +1,6 @@
 #include "main.h"
 /**
-* more_numbers - prints 10 times the numbers, from 0 to 14
-* @a: parameter 1
-* @b: parameter 2
+* more_numbers - prints 10 times the numbers
 * Return: Always 0 (success)
 */
 void more_numbers(void)
@@ -11,7 +9,6 @@ void more_numbers(void)
 	int b;
 
 	a = 0;
-
 	while (a < 10)
 	{
 		b = 0;
