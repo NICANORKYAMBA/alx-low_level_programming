@@ -1,5 +1,13 @@
 # 0x05-pointers_arrays_strings
 
+## Objectives
+
+***-What are pointers and how to use them
+   -What are arrays and how to use them
+   -What are the differences between pointers and arrays
+   -How to use strings and how to manipulate them
+   -Scope of variables***
+
 ## 0-reset_to_98.c
 
 **Write a function that takes a pointer to an int as parameter and updates the value it points to to 98.**
@@ -68,7 +76,7 @@
 
 -Return value: the pointer to dest
 
-*FYI: The standard library provides a similar function: strcpy. Run man strcpy to learn more.*
+***FYI: The standard library provides a similar function: strcpy. Run man strcpy to learn more.***
 
 ## 100-atoi.c
 
