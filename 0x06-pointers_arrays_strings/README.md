@@ -168,6 +168,7 @@ First, solve the problem. Then, write the code
 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00
 0x2a 0x2a 0x2a 0x2a 0x2a 0x2a 0x2a 0x00
 julien@ubuntu:~/0x06$
+```
 
 
 ## 3. strcmp
@@ -263,11 +264,11 @@ julien@ubuntu:~/0x06$ ./4-rev_array
 julien@ubuntu:~/0x06$
 
 
+
 ## 5. Always look up
 **Write a function that changes all lowercase letters of a string to uppercase.**
 
 * Prototype: char *string_toupper(char *);
-
 
 ```
 julien@ubuntu:~/0x06$ cat 5-main.c
@@ -295,6 +296,7 @@ LOOK UP!
 LOOK UP!
 julien@ubuntu:~/0x06$
 ```
+
 
 ## 6. Expect the best. Prepare for the worst. Capitalize on what comes
 **Write a function that capitalizes all words of a string.**
