@@ -206,6 +206,7 @@ julien@ubuntu:~/0x06$ ./3-strcmp
 15
 0
 julien@ubuntu:~/0x06$
+```
 
 
 ## 4. I am a kind of paranoid in reverse. I suspect people of plotting to make me happy
