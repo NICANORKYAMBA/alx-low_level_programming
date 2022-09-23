@@ -97,6 +97,7 @@ Hello WWorld!
 World!
 Hello WWorld!
 julien@ubuntu:~/0x06$ 
+```
 
 
 ## 2. strncpy
