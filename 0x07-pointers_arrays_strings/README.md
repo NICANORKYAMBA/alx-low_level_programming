@@ -86,7 +86,7 @@ julien@ubuntu:~/0x07$
 
 * File: 0-memset.c
 
-##1. memcpy
+## 1. memcpy
 
 **Write a function that copies memory area.**
 
@@ -174,7 +174,7 @@ julien@ubuntu:~/0x07$
 
 * File: 1-memcpy.c
 
-##2. strchr
+## 2. strchr
 
 **Write a function that locates a character in a string.**
 
@@ -215,7 +215,7 @@ julien@ubuntu:~/0x07$
 
 * File: 2-strchr.c
 
-##3. strspn
+## 3. strspn
 
 **Write a function that gets the length of a prefix substring.**
 
@@ -253,7 +253,7 @@ julien@ubuntu:~/0x07$
 
 * File: 3-strspn.c
 
-##4. strpbrk
+## 4. strpbrk
 
 **Write a function that searches a string for any of a set of bytes.**
 
@@ -294,7 +294,7 @@ julien@ubuntu:~/0x07$
 * File: 4-strpbrk.c
 
 
-##5. strstr
+## 5. strstr
 
 **Write a function that locates a substring.**
 
@@ -335,7 +335,7 @@ julien@ubuntu:~/0x07$
 * File: 5-strstr.c
 
 
-##6. Chess is mental torture
+## 6. Chess is mental torture
 
 **Write a function that prints the chessboard.**
 
@@ -384,7 +384,7 @@ julien@ubuntu:~/0x07$
 * File: 7-print_chessboard.c
 
 
-##7. The line of life is a ragged diagonal between duty and desire
+## 7. The line of life is a ragged diagonal between duty and desire
 
 **Write a function that prints the sum of the two diagonals of a square matrix of integers.**
 
@@ -434,8 +434,8 @@ julien@ubuntu:~/0x07$
 * File: 8-print_diagsums.c
 
 
-##8. Double pointer, double fun
-###advanced
+## 8. Double pointer, double fun
+### advanced
 **Write a function that sets the value of a pointer to a char.**
 
 * Prototype: void set_string(char **s, char *to);
@@ -472,8 +472,8 @@ julien@ubuntu:~/0x07$
 * File: 100-set_string.c
 
 
-##9. My primary goal of hacking was the intellectual curiosity, the seduction of adventure
-###advanced
+## 9. My primary goal of hacking was the intellectual curiosity, the seduction of adventure
+### advanced
 **Create a file that contains the password for the crackme2 executable.**
 
 * Your file should contain the exact password, no new line, no extra space
