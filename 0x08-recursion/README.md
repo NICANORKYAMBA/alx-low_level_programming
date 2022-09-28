@@ -129,7 +129,7 @@ julien@ubuntu:~/0x08. Recursion$ ./3-factorial
 julien@ubuntu:~/0x08. Recursion$
 ```
 
-	* File: 3-factorial.c
+	 File: 3-factorial.c
 
 ## 4. Once an idea has taken hold of the brain it's almost impossible to eradicate
 
