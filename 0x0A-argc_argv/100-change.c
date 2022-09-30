@@ -30,7 +30,8 @@ if (total >= coins[position])
 {
 aux = (total / coins[position]);
 change += aux;
-total -= coins[position] * aux;}
+total -= coins[position] * aux;
+}
 position++;
 }
 printf("%d\n", change);

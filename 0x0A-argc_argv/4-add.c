@@ -30,7 +30,8 @@ return (1);
 *
 * Return: Always 0 (Success)
 */
-int main(int argc, char *argv[]){
+int main(int argc, char *argv[])
+{
 /*Declaring variables*/
 int count;
 int str_to_int;
