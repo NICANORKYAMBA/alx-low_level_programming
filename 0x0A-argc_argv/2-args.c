@@ -1,20 +1,14 @@
-#include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
 
-/**
-* main - prints all the arguments
-* @argc: number of arguments
-* @argv: the vector that hold the arguments
-*
-* Description: using arc and argv to achieve the indended function
-* Return: returns 0 if it works or something else if error
-*/
 
 int main(int argc, char **argv)
-{
-	int i = 0;
+{	
+	int i;
 
-	while (i++ < argc)
-		printf("%s\n", *argv++);
+	for (i = 0; i < argc; i++)
+	{
+		printf("%s\n", *(argv + i));
+	}
 	return (0);
 }
