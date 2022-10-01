@@ -1,23 +1,26 @@
-#include "main.h"
-#include <stdlib.h>
 #include <stdio.h>
-/**
-* main - prints the multiplication of two integers
-* @argc: argument count
-* @argv: argument vector
-* Return: 0 if true, 1 if false
-*/
-int main(int argc, char *argv[])
-{
-	int a, b;
+#include <stdlib.h>
 
-	if (argc == 3)
+/**
+ * main - a program that multiplies two numbers.
+ *
+ * @argc: number of arguments
+ * @argv:arguments passed to the program
+ * Return:int
+ */
+
+int main(int argc, char **argv)
+{
+	int product;
+
+	if (argc - 1 != 2)
 	{
-		a = atoi(argv[1]);
-		b = atoi(argv[2]);
-		printf("%d\n", a * b);
-		return (0);
+		printf("Error\n");
+		return (1);
 	}
-	printf("Error\n");
-	return (1);
+	product = atoi(argv[1]) * atoi(argv[2]);
+	{
+		printf("%d\n", product);
+	}
+	return (0);
 }
