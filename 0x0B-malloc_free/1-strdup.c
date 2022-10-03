@@ -15,13 +15,13 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	
+
 	for (x = 0; str[x]; x++)
 	{
 		y++;
 	}
-	ptr = (char *)malloc(y * sizeof(char));
-	
+	ptr = (char *)malloc((y + 1) * sizeof(char));
+
 	if (ptr == NULL)
 	{
 		return (NULL);
