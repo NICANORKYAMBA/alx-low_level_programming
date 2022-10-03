@@ -15,21 +15,23 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	else
+	
+	for (x = 0; str[x]; x++)
 	{
-		for (x = 0; str[x]; x++)
-		{
-			ptr = (char *)malloc(x * sizeof(char));
-		}
+		y++;
 	}
+	ptr = (char *)malloc(y * sizeof(char));
+	
 	if (ptr == NULL)
 	{
 		return (NULL);
 	}
-	for (y = 0; y < x; y++)
+	for (x = 0; str[x]; x++)
 	{
-		ptr[y] = str[y];
+		ptr[x] = str[x];
 	}
+	ptr[y] = '\0';
+
 	return (ptr);
 	free(ptr);
 }
