@@ -29,7 +29,7 @@ char *str_concat(char *s1, char *s2)
 		x++;
 	}
 
-	ptr = malloc(x * sizeof(char));
+	ptr = malloc((x + 1) * sizeof(char));
 
 	if (ptr == NULL)
 	{
@@ -43,6 +43,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		ptr[j++] = s2[i];
 	}
+	ptr[x] = '\0';
 
 	return (ptr);
 	free(ptr);
