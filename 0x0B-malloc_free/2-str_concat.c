@@ -10,41 +10,30 @@
  *                     containing the concatenated strings.
  */
 
-
 char *str_concat(char *s1, char *s2)
 {
-	char *ptr;
-	unsigned int i, j, x;
+	char *concat_str;
+	int i, concat_index = 0, len = 0;
 
 	if (s1 == NULL)
-	{
-		s1 = " ";
-	}
+		s1 = "";
+
 	if (s2 == NULL)
-	{
-		s2 = " ";
-	}
+		s2 = "";
+
 	for (i = 0; s1[i] || s2[i]; i++)
-	{
-		x++;
-	}
+		len++;
 
-	ptr = malloc((x + 1) * sizeof(char));
+	concat_str = malloc(sizeof(char) * len);
 
-	if (ptr == NULL)
-	{
+	if (concat_str == NULL)
 		return (NULL);
-	}
-	for (i = 0; s1[i]; i++)
-	{
-		ptr[j++] = s1[i];
-	}
-	for (i = 0; s2[i]; i++)
-	{
-		ptr[j++] = s2[i];
-	}
-	ptr[x] = '\0';
 
-	return (ptr);
-	free(ptr);
+	for (i = 0; s1[i]; i++)
+		concat_str[concat_index++] = s1[i];
+
+	for (i = 0; s2[i]; i++)
+		concat_str[concat_index++] = s2[i];
+
+	return (concat_str);
 }
