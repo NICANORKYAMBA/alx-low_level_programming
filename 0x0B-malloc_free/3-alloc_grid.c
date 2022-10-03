@@ -18,7 +18,7 @@ int **alloc_grid(int width, int height)
 	if (width <= 0 || height <= 0)
 		return (NULL);
 
-	twoDarray = malloc(height * sizeof(int*));
+	twoDarray = malloc(height * sizeof(int *));
 
 	if (twoDarray == NULL)
 		return (NULL);
@@ -34,7 +34,7 @@ int **alloc_grid(int width, int height)
 			return (NULL);
 		}
 	}
-	
+
 	for (height_index = 0; height_index < height; height_index++)
 	{
 		for (width_index = 0; width_index < width; width_index++)
