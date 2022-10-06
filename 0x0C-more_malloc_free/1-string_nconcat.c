@@ -24,10 +24,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s2 == NULL)
 		s2 = "";
 
-	for (length1 = 0; s1[length1]; length1++)
+	for (length1 = 0; s1[length1] != '\0'; length1++)
 		;
 
-	for (length2 = 0; s2[length2]; length2++)
+	for (length2 = 0; s2[length2] != '\0'; length2++)
 		;
 
 	if (n >= length2)
