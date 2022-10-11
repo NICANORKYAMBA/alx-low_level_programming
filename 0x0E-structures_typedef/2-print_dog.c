@@ -1,10 +1,10 @@
 #include "dog.h"
 #include <stdio.h>
 /**
- * print_dog - prints a struct dog
- * @d: pointer to structure
+ *print_dog - a function that prints a struct dog
  *
- * Return: void
+ *@d: name of struct dog
+ * Return: nothing
  */
 void print_dog(struct dog *d)
 {
@@ -20,4 +20,6 @@ void print_dog(struct dog *d)
 		else
 			printf("Owner: (nil)\n");
 	}
+	else
+		return;
 }
