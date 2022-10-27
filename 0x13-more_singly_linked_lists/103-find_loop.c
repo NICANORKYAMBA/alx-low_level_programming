@@ -17,11 +17,11 @@ listint_t *find_listint_loop(listint_t *head)
 
 		if (p == q)
 		{
-			p = q;
+			p = head;
 			break;
 		}
 	}
-	
+
 	if (!p || !q || !q->next)
 		return (NULL);
 
