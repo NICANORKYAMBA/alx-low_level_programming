@@ -14,7 +14,7 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-	int filecreate, writefile, len;
+	int filecreate, len;
 
 	len = 0;
 
@@ -23,19 +23,15 @@ int create_file(const char *filename, char *text_content)
 
 	filecreate = open(filename, O_CREAT | O_TRUNC | O_WRONLY, 0600);
 
-	if (!filecreate)
+	if (filecreate == -1)
 		return (-1);
 
 	if (text_content != NULL)
 	{
 		while (text_content[len])
 			len++;
-		writefile = write(filecreate, text_content, len);
+		write(filecreate, text_content, len);
 	}
-
-	if (!writefile)
-		return (-1);
-
 	close(filecreate);
 	return (1);
 }
