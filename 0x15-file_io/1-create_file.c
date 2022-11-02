@@ -6,24 +6,22 @@
 #include <string.h>
 #include <stdlib.h>
 /**
-  * create_file - creates a file.
-  * @filename: pointer to file.
-  * @text_content: buffer.
-  *
-  * Return: 1 or -1
-  */
+ * create_file - creates a file.
+ * @filename: pointer to file.
+ * @text_content: buffer.
+ *
+ * Return: 1 or -1
+ */
 int create_file(const char *filename, char *text_content)
 {
 	int filecreate, writefile, len;
+
 	len = 0;
 
 	if (!filename)
 		return (-1);
 
-/*	if (!text_content)
-		text_content = "";
-*/
-	filecreate = open(filename, O_CREAT | O_TRUNC | O_WRONLY, 00600);
+	filecreate = open(filename, O_CREAT | O_TRUNC | O_WRONLY, 0600);
 
 	if (!filecreate)
 		return (-1);
