@@ -8,7 +8,7 @@
 
 int create_file(const char *filename, char *text_content)
 {
-	int filecreate, writefile, truncfile, len;
+	int filecreate, writefile, len;
 	char *buf;
 
 	if (!filename)
@@ -18,13 +18,13 @@ int create_file(const char *filename, char *text_content)
 	
 	len = strlen(text_content) + 1;
 	
-	if (filename)
+	/*if (filename)
 	{
 		truncfile = truncate(filename, len);
 		if (!truncfile)
 			return (-1);
-	}
-	filecreate = open(filename, O_CREAT | O_RDWR, 00600);
+	}*/
+	filecreate = open(filename, O_CREAT | O_TRUNC | O_RDWR, 00600);
 
 	if (!filecreate)
 		return (-1);
