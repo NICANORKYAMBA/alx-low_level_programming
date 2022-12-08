@@ -18,6 +18,10 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	{
 		return (NULL);
 	}
+	if (idx == 0)
+	{
+		return (add_dnodeint(h, n));
+	}
 	else
 	{
 		tmp = *h;
@@ -27,9 +31,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 			tmp = tmp->next;
 			i++;
 		}
-		if (idx == 0)
-			return (add_dnodeint(h, n));
-		else if (tmp == *h)
+		if (tmp == NULL && i == idx)
 			return (add_dnodeint_end(h, n));
 		else if (tmp)
 		{
@@ -47,7 +49,6 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 
 			return (newnode);
 		}
-		else
-			return (NULL);
+		return (NULL);
 	}
 }
