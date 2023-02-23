@@ -1,4 +1,4 @@
-SRC = m.h school.c main.c
+SRC = school.c main.c
 
 CC = gcc
 
