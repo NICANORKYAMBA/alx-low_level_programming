@@ -48,6 +48,9 @@ int my_binary_search(int *array, int left, int right, int value)
 {
 	int mid;
 
+	if (!array)
+		return (-1);
+
 	while (left <= right)
 	{
 		mid = (left + right) / 2;
